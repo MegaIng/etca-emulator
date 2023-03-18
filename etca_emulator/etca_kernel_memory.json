@@ -1,0 +1,50 @@
+{
+    "kind": "sections",
+    "sections": [
+        {
+            "first_addr": "0x0000_0000_0000_0001",
+            "last_addr": "0x0000_0000_0000_0001",
+            "mapper": {
+                "kind": "inputstream_file",
+                "path": "perf_loop.s"
+            }
+        },
+        {
+            "first_addr": "0x0000_0000_0000_0002",
+            "last_addr": "0x0000_0000_0000_0002",
+            "mapper": {
+                "kind": "constant",
+                "value": 0
+            }
+        },
+        {
+            "first_addr": "0x0000_0000_0000_0003",
+            "last_addr": "0x0000_0000_0000_0003",
+            "mapper": {
+                "kind": "stream_stdout"
+            }
+        },
+        {
+            "first_addr": "0x0000_0000_0000_0020",
+            "last_addr": "0x0000_0000_0000_7FFF",
+            "mapper": {
+                "kind": "empty_ram"
+            }
+        },
+        {
+            "first_addr": "0xFFFF_FFFF_FFFF_8000",
+            "last_addr": "0xFFFF_FFFF_FFFF_BFFF",
+            "mapper": {
+                "kind": "rom_from_file",
+                "path": "asm_loader_kernel.bin"
+            }
+        },
+        {
+            "first_addr": "0xFFFF_FFFF_FFFF_C000",
+            "last_addr": "0xFFFF_FFFF_FFFF_FFFF",
+            "mapper": {
+                "kind": "empty_ram"
+            }
+        }
+    ]
+}
